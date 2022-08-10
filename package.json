@@ -4,7 +4,7 @@
   "main": "./server/index.js",
   "type": "module",
   "scripts": {
-    "start": "node server/index",
+    "start": "cd server npm i && node index",
     "dev": "npm run client && npm run start",
     "build": "cd client && npm run build",
     "install-client": "cd client && npm install",
