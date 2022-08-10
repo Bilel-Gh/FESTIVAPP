@@ -1,0 +1,43 @@
+.mantine-Modal-modal {
+    border-radius: 1rem;
+    width: 50em;
+    background: hsl(252, 30%, 100%) !important;
+    color: hsl(252, 30%, 17%) !important;
+    .mantine-Modal-body{
+        background: hsl(252, 30%, 100%) !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: var(--border-radius);
+        padding-bottom: 2rem;
+    }
+    .infoForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        h3 {
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            color: var(--color-primary);
+        }
+        div {
+            display: flex;
+            gap: 1rem;
+            div {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        .infoInput {
+            background: hsl(252, 30%, 95%) !important;
+            padding: 1rem;
+            border-radius: 1rem;
+        }
+        .changeFile {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

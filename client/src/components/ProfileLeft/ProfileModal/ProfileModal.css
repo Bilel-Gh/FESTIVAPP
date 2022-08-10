@@ -1,0 +1,40 @@
+.mantine-Modal-modal {
+  border-radius: 1rem;
+}
+.mantine-Modal-modal .mantine-Modal-body {
+  background: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--border-radius);
+  padding-bottom: 2rem;
+}
+.mantine-Modal-modal .infoForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+.mantine-Modal-modal .infoForm h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--color-primary);
+}
+.mantine-Modal-modal .infoForm div {
+  display: flex;
+  gap: 1rem;
+}
+.mantine-Modal-modal .infoForm div div {
+  display: flex;
+  flex-direction: column;
+}
+.mantine-Modal-modal .infoForm .infoInput {
+  background: var(--color-light);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.mantine-Modal-modal .infoForm .changeFile {
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=ProfileModal.css.map */

@@ -1,0 +1,8 @@
+.Home {
+  position: relative;
+  display: grid;
+  grid-template-columns: 18em auto 18em;
+  gap: 1rem;
+  margin-top: 100px;
+  padding: 0 10%;
+}/*# sourceMappingURL=Home.css.map */

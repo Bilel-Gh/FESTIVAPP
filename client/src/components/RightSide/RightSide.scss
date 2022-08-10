@@ -1,0 +1,100 @@
+.RightSide {
+    position: sticky;
+    top: var(--sticky-top-right); // -18rem;
+    bottom: 0;
+    height: 100vh;
+    overflow: auto;
+    overflow-x: hidden;
+    padding-bottom: 140px;
+    .messages {
+        background-color: var(--color-white);
+        border-radius: var(--border-radius);
+        padding: var(--card-padding);
+        .heading {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            i {
+                font-size: 1.4rem;
+                cursor: pointer;
+            }
+        }
+        .search-bar {
+            display: flex;
+            background: red;
+            margin-bottom: 1rem;
+            background-color: var(--color-light);
+            border-radius: var(--border-radius);
+            padding: var(--search-padding);
+            input[type="search"] {
+                background: transparent;
+                width: 30vw;
+                margin-left: 1rem;
+                font-size: 0.9rem;
+                color: var(--color-dark);
+            }
+        }
+
+        .category {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            h6 {
+                width: 100%;
+                text-align: center;
+                border-bottom: 4px solid var(--color-light);
+                padding-bottom: 0.5rem;
+                font-size: 0.85rem;
+            }
+            .active {
+                border-color: var(--color-dark);
+            }
+            .message-requests {
+                color: var(--color-primary);
+            }
+        }
+
+        .message {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            align-items: start;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            p {
+                font-size: 0.9rem;
+            }
+            .profile-picture {
+                position: relative;
+                overflow: visible;
+                width: 40px;
+                height: 40px;
+                img {
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    object-fit: cover;
+                }
+                .active {
+                    width: 0.8rem;
+                    height: 0.8rem;
+                    border-radius: 50%;
+                    border: 3px solid var(--color-white);
+                    background: var(--color-success);
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                }
+            }
+        }
+    }
+
+    // responsive mobile
+    @media (max-width: 1000px) {
+        display: none;
+    }
+
+
+}

@@ -1,0 +1,55 @@
+.Auth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 4rem;
+  position: relative;
+}
+.Auth .a-left {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Auth .a-left h1 {
+  font-size: 3.5rem;
+  color: var(--color-primary);
+}
+.Auth .a-right {
+  background: var(--color-white);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+.Auth .a-right .infoForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+.Auth .a-right .infoForm h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--color-primary);
+}
+.Auth .a-right .infoForm div {
+  display: flex;
+  gap: 1rem;
+}
+.Auth .a-right .infoForm div div {
+  display: flex;
+  flex-direction: column;
+}
+.Auth .a-right .infoForm .infoInput {
+  background: var(--color-light);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.Auth .a-right .login div div {
+  width: 100%;
+}
+.Auth .btn {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+}/*# sourceMappingURL=Auth.css.map */

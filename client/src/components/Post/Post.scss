@@ -1,0 +1,86 @@
+.Post {
+    gap: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 0.5rem 1rem;
+    border-radius: 1rem;
+    background: var(--color-white);
+    > img {
+        border-radius: 1rem;
+    }
+    .PostInfos {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        padding: 0 0.5rem 8px 0.5rem;
+        > img {
+            border-radius: 50%;
+            width: 2.5rem;
+            height: 2.5rem;
+            margin-right: 10px;
+        }
+        .UserDetailContainer {
+            .UserDetail{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+    .LikedHeart {
+        color: var(--color-primary)
+    }
+    .postReact {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1rem;
+        font-size: 1.5rem;
+        > div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
+    }
+
+    >span {
+        padding: 0 1rem;
+        color: var(--gray);
+        font-size: 12px;
+    }
+
+    .detail {
+        span:nth-child(1) {
+            margin-right: 0.4rem;
+        }
+        padding: 0 1rem;
+    }
+
+    .InputComment {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.3rem 0.5rem;
+        font-size: 1rem;
+        margin-top: 1rem;
+        border-radius: 1rem;
+        background: var(--color-light);
+        > div {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            width: 100%;
+        }
+        input {
+            background: transparent;
+            margin-left: 1rem;
+            font-size: 0.9rem;
+            width: 100%;
+            color: var(--color-dark);
+        }
+        img {
+            border-radius: 50%;
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+}

@@ -1,0 +1,139 @@
+.CustomTheme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.customize-theme {
+  background: rgba(255, 255, 255, 0.5);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  font-size: 0.9rem;
+  display: none;
+}
+.customize-theme .card {
+  background: var(--color-white);
+  padding: 3rem;
+  border-radius: var(--card-border-radius);
+  width: 50%;
+  box-shadow: 0 0 1rem hsla(251.8deg, 75.4%, 60.2%, 0.38);
+}
+@media screen and (max-width: 1200px) {
+  .customize-theme .card {
+    width: 80vw;
+  }
+}
+.customize-theme .font-size {
+  margin-top: 5rem;
+}
+.customize-theme .font-size > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-light);
+  padding: var(--search-padding);
+  border-radius: var(--card-border-radius);
+}
+.customize-theme .font-size .choose-size {
+  background: var(--color-secondary);
+  height: 0.3rem;
+  width: 100%;
+  margin: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.customize-theme .font-size .choose-size span {
+  width: 1rem;
+  height: 1rem;
+  background: var(--color-secondary);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.customize-theme .font-size .choose-size span.active {
+  background: var(--color-primary);
+}
+.customize-theme .color {
+  margin-top: 2rem;
+}
+.customize-theme .color .choose-color {
+  background: var(--color-light);
+  padding: var(--search-padding);
+  border-radius: var(--card-border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.customize-theme .color .choose-color span {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.customize-theme .color .choose-color span:nth-child(1) {
+  background: hsl(252deg, 75%, 60%);
+}
+.customize-theme .color .choose-color span:nth-child(2) {
+  background: hsl(52deg, 75%, 60%);
+}
+.customize-theme .color .choose-color span:nth-child(3) {
+  background: hsl(352deg, 75%, 60%);
+}
+.customize-theme .color .choose-color span:nth-child(4) {
+  background: hsl(152deg, 75%, 60%);
+}
+.customize-theme .color .choose-color span:nth-child(5) {
+  background: hsl(202deg, 75%, 60%);
+}
+.customize-theme .color .choose-color span.active {
+  border: 5px solid white;
+}
+.customize-theme .background {
+  margin-top: 2rem;
+}
+.customize-theme .background .choose-bg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.customize-theme .background .choose-bg > div {
+  padding: var(--card-padding);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+.customize-theme .background .choose-bg > div.active {
+  border: 2px solid var(--color-primary);
+}
+.customize-theme .background .choose-bg .bg-1 {
+  background: white;
+  color: black;
+}
+.customize-theme .background .choose-bg .bg-2 {
+  background: hsl(252deg, 30%, 17%);
+  color: white;
+}
+.customize-theme .background .choose-bg .bg-3 {
+  background: hsl(252deg, 30%, 10%);
+  color: white;
+}
+.customize-theme .background .choose-bg span {
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid var(--color-gray);
+  border-radius: 50%;
+  margin-right: 1rem;
+}/*# sourceMappingURL=CustomTheme.css.map */

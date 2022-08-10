@@ -1,0 +1,33 @@
+.InforCard {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    background-color: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--border-radius);
+    .info {
+        background: var(--color-light);
+        padding: 0.5rem;
+        border-radius: 1rem;
+    }
+    .infoHead {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem;
+        i {
+            font-size: 1.4rem;
+        }
+        >div:hover {
+            cursor: pointer;
+        }
+    }
+
+    button {
+        width: 8rem;
+        height: 2.2rem;
+        padding: 0;
+        margin-top: 1rem;
+        align-self: center;
+    }
+}

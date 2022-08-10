@@ -1,0 +1,93 @@
+.RightSide {
+  position: -webkit-sticky;
+  position: sticky;
+  top: var(--sticky-top-right);
+  bottom: 0;
+  height: 100vh;
+  overflow: auto;
+  overflow-x: hidden;
+  padding-bottom: 140px;
+}
+.RightSide .messages {
+  background-color: var(--color-white);
+  border-radius: var(--border-radius);
+  padding: var(--card-padding);
+}
+.RightSide .messages .heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.RightSide .messages .heading i {
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.RightSide .messages .search-bar {
+  display: flex;
+  background: red;
+  margin-bottom: 1rem;
+  background-color: var(--color-light);
+  border-radius: var(--border-radius);
+  padding: var(--search-padding);
+}
+.RightSide .messages .search-bar input[type=search] {
+  background: transparent;
+  width: 30vw;
+  margin-left: 1rem;
+  font-size: 0.9rem;
+  color: var(--color-dark);
+}
+.RightSide .messages .category {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.RightSide .messages .category h6 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 4px solid var(--color-light);
+  padding-bottom: 0.5rem;
+  font-size: 0.85rem;
+}
+.RightSide .messages .category .active {
+  border-color: var(--color-dark);
+}
+.RightSide .messages .category .message-requests {
+  color: var(--color-primary);
+}
+.RightSide .messages .message {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  align-items: start;
+}
+.RightSide .messages .message:last-child {
+  margin-bottom: 0;
+}
+.RightSide .messages .message p {
+  font-size: 0.9rem;
+}
+.RightSide .messages .message .profile-picture {
+  position: relative;
+  overflow: visible;
+  width: 40px;
+  height: 40px;
+}
+.RightSide .messages .message .profile-picture img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.RightSide .messages .message .profile-picture .active {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  border: 3px solid var(--color-white);
+  background: var(--color-success);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}/*# sourceMappingURL=RightSide.css.map */

@@ -1,0 +1,70 @@
+.Profile {
+    margin-top: 100px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 19em 50% 25%;
+    @media (max-width: 1000px) {
+        grid-template-columns: auto;
+    }
+    gap: 1.5rem;
+    padding: 0 10%;
+    overflow: none;
+
+    .Profile-center {
+        gap: 2rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        @media (max-width: 1000px) {
+            order: 1;
+        }
+        .ProfileCard {
+            padding-bottom: 1rem;
+            gap: 0.5rem;
+
+            .ProfileName {
+                gap: 0;
+            }
+            .followStatus {
+                hr {
+                    display: none;
+                }
+                .vl {
+                    height: 70%;
+                }
+                gap: 0.25rem;
+                > div {
+                    margin-right: 30px;
+                    .follow {
+                        span:nth-child(1) {
+                            font-size: 1rem;
+                        }
+                        span:nth-child(2) {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+            > span {
+                display: none;
+            }
+        }
+        .PostShare {
+            // display: none;
+        }
+        .Posts {
+            padding-bottom: 5rem;
+            @media (max-width: 1000px) {
+                padding-bottom: 2rem;
+            }
+        }
+        .PostSide {
+            border-radius: 1rem;
+        }
+    }
+    .ProfileLeft {
+        @media (max-width: 1000px) {
+            order: 2;
+        }
+    }
+}

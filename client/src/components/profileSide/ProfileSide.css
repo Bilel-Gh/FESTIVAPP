@@ -1,0 +1,9 @@
+.ProfileSide {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  overflow: auto;
+  padding-bottom: 115px;
+  height: 100vh;
+}/*# sourceMappingURL=ProfileSide.css.map */

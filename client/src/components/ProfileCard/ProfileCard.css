@@ -1,0 +1,92 @@
+.ProfileCard {
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 1rem;
+  overflow-x: clip;
+  background: var(--color-white);
+}
+.ProfileCard .ProfileImages {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ProfileCard .ProfileImages .CoverContainer {
+  max-height: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+.ProfileCard .ProfileImages > img:nth-child(1) {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 70%;
+}
+.ProfileCard .ProfileImages > img:nth-child(2) {
+  width: 6rem;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -3rem;
+  box-shadow: var(--profileShadow);
+}
+.ProfileCard .ProfileName {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  gap: 10px;
+}
+.ProfileCard .ProfileName span:nth-of-type(1) {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+.ProfileCard .followStatus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+.ProfileCard .followStatus hr {
+  width: 85%;
+  border: 0.5px solid var(--hrColor);
+}
+.ProfileCard .followStatus > div {
+  display: flex;
+  gap: 1rem;
+  width: 80%;
+  justify-content: space-around;
+  align-items: center;
+}
+.ProfileCard .followStatus > div .follow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.ProfileCard .followStatus > div .follow span:nth-of-type(1) {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+.ProfileCard .followStatus > div .vl {
+  height: 100%;
+  border-left: 2px solid var(--hrColor);
+}
+.ProfileCard > span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  align-self: center;
+}
+.ProfileCard > span i {
+  color: var(--color-primary);
+  font-size: 1.4rem;
+}/*# sourceMappingURL=ProfileCard.css.map */

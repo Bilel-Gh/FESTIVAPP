@@ -1,0 +1,46 @@
+.Profile {
+  margin-top: 100px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 19em 50% 25%;
+  gap: 1.5rem;
+  padding: 0 10%;
+  overflow: none;
+}
+.Profile .Profile-center {
+  gap: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.Profile .Profile-center .ProfileCard {
+  padding-bottom: 1rem;
+  gap: 0.5rem;
+}
+.Profile .Profile-center .ProfileCard .ProfileName {
+  gap: 0;
+}
+.Profile .Profile-center .ProfileCard .followStatus {
+  gap: 0.25rem;
+}
+.Profile .Profile-center .ProfileCard .followStatus hr {
+  display: none;
+}
+.Profile .Profile-center .ProfileCard .followStatus .vl {
+  height: 70%;
+}
+.Profile .Profile-center .ProfileCard .followStatus > div {
+  margin-right: 30px;
+}
+.Profile .Profile-center .ProfileCard .followStatus > div .follow span:nth-child(1) {
+  font-size: 1rem;
+}
+.Profile .Profile-center .ProfileCard .followStatus > div .follow span:nth-child(2) {
+  font-size: 1rem;
+}
+.Profile .Profile-center .ProfileCard > span {
+  display: none;
+}
+.Profile .Profile-center .PostSide {
+  border-radius: 1rem;
+}/*# sourceMappingURL=Profile.css.map */
