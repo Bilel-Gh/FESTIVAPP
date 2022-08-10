@@ -39,10 +39,10 @@ mongoose
 
 //   ───────────────────────────────────────UTILISATION DES ROUTES─────────────────────────────────────────
 
-app.use("/auth", AuthRoute);
-app.use("/user", UserRoute);
-app.use("/post", PostRoute);
-app.use("/upload", UploadRoute);
+app.use("/api/auth", AuthRoute);
+app.use("/api/user", UserRoute);
+app.use("/api/post", PostRoute);
+app.use("/api/upload", UploadRoute);
 
 // ────────────────────────────────────────PRODUCTION───────────────────────────────────────────────────────
 
@@ -50,8 +50,8 @@ if (process.env.NODE_ENV === "production") {
 
   app.use(express.static("../client/build"));
 
-  // app.get("*", (req, res) => {
-  //   res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
-  // }
-  // );
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+  }
+  );
 }
