@@ -48,6 +48,7 @@ app.use("/api/upload", UploadRoute);
 // ────────────────────────────────────────PRODUCTION───────────────────────────────────────────────────────
 
 const __dirname = path.resolve();
+console.log(__dirname);
 
 if (process.env.NODE_ENV === "production") {
 
