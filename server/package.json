@@ -5,11 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon index.js ",
-    "build": "cd ../festiv-app && npm run build",
-    "install-client": "cd ../festiv-app && npm install",
-    "heroku-postbuild": "npm run install-client && npm run build",
-    "client": "cd ../festiv-app && yarn start"
+    "start": "nodemon index.js "
   },
   "author": "",
   "license": "ISC",
