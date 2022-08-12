@@ -1,8 +1,11 @@
 .mantine-Modal-modal {
   border-radius: 1rem;
+  width: 50em;
+  background: hsl(252deg, 30%, 100%) !important;
+  color: hsl(252deg, 30%, 17%) !important;
 }
 .mantine-Modal-modal .mantine-Modal-body {
-  background: var(--color-white);
+  background: hsl(252deg, 30%, 100%) !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +33,7 @@
   flex-direction: column;
 }
 .mantine-Modal-modal .infoForm .infoInput {
-  background: var(--color-light);
+  background: hsl(252deg, 30%, 95%) !important;
   padding: 1rem;
   border-radius: 1rem;
 }

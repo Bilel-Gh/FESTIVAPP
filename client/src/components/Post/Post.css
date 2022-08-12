@@ -50,4 +50,32 @@
 }
 .Post .detail span:nth-child(1) {
   margin-right: 0.4rem;
+}
+.Post .InputComment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.3rem 0.5rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  background: var(--color-light);
+}
+.Post .InputComment > div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+.Post .InputComment input {
+  background: transparent;
+  margin-left: 1rem;
+  font-size: 0.9rem;
+  width: 100%;
+  color: var(--color-dark);
+}
+.Post .InputComment img {
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
 }/*# sourceMappingURL=Post.css.map */

@@ -6,6 +6,7 @@
   gap: 1rem;
   overflow-x: clip;
   background: var(--color-white);
+  padding-bottom: 1rem;
 }
 .ProfileCard .ProfileImages {
   position: relative;
@@ -25,12 +26,20 @@
      object-fit: cover;
   max-height: 70%;
 }
-.ProfileCard .ProfileImages > img:nth-child(2) {
+.ProfileCard .ProfileImages a {
   width: 6rem;
   border-radius: 50%;
   position: absolute;
   bottom: -3rem;
   box-shadow: var(--profileShadow);
+}
+.ProfileCard .ProfileImages a > img {
+  cursor: pointer;
+  width: 6rem;
+  border-radius: 50%;
+  height: 6rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .ProfileCard .ProfileName {
   display: flex;
@@ -53,7 +62,7 @@
 }
 .ProfileCard .followStatus hr {
   width: 85%;
-  border: 0.5px solid var(--hrColor);
+  border: 0.5px solid var(--color-light);
 }
 .ProfileCard .followStatus > div {
   display: flex;
@@ -76,7 +85,7 @@
 }
 .ProfileCard .followStatus > div .vl {
   height: 100%;
-  border-left: 2px solid var(--hrColor);
+  border: 0.5px solid var(--color-light);
 }
 .ProfileCard > span {
   display: flex;
@@ -89,4 +98,7 @@
 .ProfileCard > span i {
   color: var(--color-primary);
   font-size: 1.4rem;
+}
+.ProfileCard > span a {
+  color: var(--color-primary);
 }/*# sourceMappingURL=ProfileCard.css.map */

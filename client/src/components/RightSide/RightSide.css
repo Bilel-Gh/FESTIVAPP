@@ -60,7 +60,7 @@
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
-  align-items: start;
+  align-items: flex-start;
 }
 .RightSide .messages .message:last-child {
   margin-bottom: 0;
@@ -90,4 +90,9 @@
   position: absolute;
   bottom: 0;
   right: 0;
+}
+@media (max-width: 1000px) {
+  .RightSide {
+    display: none;
+  }
 }/*# sourceMappingURL=RightSide.css.map */

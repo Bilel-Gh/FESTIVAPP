@@ -6,4 +6,10 @@
   overflow: auto;
   padding-bottom: 115px;
   height: 100vh;
+}
+@media (max-width: 1000px) {
+  .ProfileSide {
+    height: 100%;
+    padding-bottom: 15px;
+  }
 }/*# sourceMappingURL=ProfileSide.css.map */

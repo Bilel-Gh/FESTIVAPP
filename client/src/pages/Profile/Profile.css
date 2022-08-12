@@ -7,11 +7,21 @@
   padding: 0 10%;
   overflow: none;
 }
+@media (max-width: 1000px) {
+  .Profile {
+    grid-template-columns: auto;
+  }
+}
 .Profile .Profile-center {
   gap: 2rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+@media (max-width: 1000px) {
+  .Profile .Profile-center {
+    order: 1;
+  }
 }
 .Profile .Profile-center .ProfileCard {
   padding-bottom: 1rem;
@@ -41,6 +51,19 @@
 .Profile .Profile-center .ProfileCard > span {
   display: none;
 }
+.Profile .Profile-center .Posts {
+  padding-bottom: 5rem;
+}
+@media (max-width: 1000px) {
+  .Profile .Profile-center .Posts {
+    padding-bottom: 2rem;
+  }
+}
 .Profile .Profile-center .PostSide {
   border-radius: 1rem;
+}
+@media (max-width: 1000px) {
+  .Profile .ProfileLeft {
+    order: 2;
+  }
 }/*# sourceMappingURL=Profile.css.map */

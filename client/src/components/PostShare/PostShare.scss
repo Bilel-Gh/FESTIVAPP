@@ -56,6 +56,7 @@
             align-items: center;
             select {
                 background: transparent;
+                color: var(--color-primary);
             }
             @media (max-width: 768px) {
                 padding: 0.5rem 1rem;

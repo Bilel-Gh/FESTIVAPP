@@ -6,6 +6,21 @@
   gap: 4rem;
   position: relative;
 }
+@media (max-width: 750px) {
+  .Auth {
+    height: auto;
+    flex-direction: column;
+    padding: 7rem 0 20rem 0 !important;
+  }
+  .Auth .a-right {
+    width: 85%;
+    padding: 2rem;
+  }
+  .Auth .a-right .infoForm div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .Auth .a-left {
   text-align: center;
   display: flex;
@@ -47,9 +62,19 @@
   padding: 1rem;
   border-radius: 1rem;
 }
+@media (max-width: 750px) {
+  .Auth .a-right .authForm div {
+    flex-direction: column;
+  }
+}
 .Auth .a-right .login div div {
   width: 100%;
 }
-.Auth .btn {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+.Auth .redirection {
+  display: flex;
+  align-items: center;
+}
+.Auth .redirection span:nth-of-type(2) {
+  padding: 0;
+  color: var(--color-primary);
 }/*# sourceMappingURL=Auth.css.map */

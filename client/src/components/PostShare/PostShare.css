@@ -10,30 +10,74 @@
   display: flex;
   width: 100%;
   gap: 1rem;
+  justify-content: space-between;
   background: var(--color-light);
   border-radius: var(--border-radius);
   padding: 0.5rem 0.7rem;
 }
-.PostShare .InputShare > img {
+@media (max-width: 1168px) {
+  .PostShare .InputShare {
+    flex-wrap: wrap;
+  }
+}
+.PostShare .InputShare > div:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.PostShare .InputShare > div:nth-child(1) > img {
   border-radius: 50%;
   width: 2rem;
   height: 2rem;
 }
-.PostShare .InputShare input[type=text] {
+.PostShare .InputShare > div:nth-child(1) input[type=text] {
   background: transparent;
   width: 100%;
   margin-left: 1rem;
   font-size: 0.9rem;
   color: var(--color-dark);
 }
-.PostShare .InputShare input[type=text]::-moz-placeholder {
+.PostShare .InputShare > div:nth-child(1) input[type=text]::-moz-placeholder {
   color: var(--color-gray);
 }
-.PostShare .InputShare input[type=text]:-ms-input-placeholder {
+.PostShare .InputShare > div:nth-child(1) input[type=text]:-ms-input-placeholder {
   color: var(--color-gray);
 }
-.PostShare .InputShare input[type=text]::placeholder {
+.PostShare .InputShare > div:nth-child(1) input[type=text]::placeholder {
   color: var(--color-gray);
+}
+@media (max-width: 1168px) {
+  .PostShare .InputShare > div:nth-child(1) input[type=text] {
+    width: 65%;
+  }
+}
+.PostShare .formActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5rem;
+  flex-wrap: wrap;
+}
+.PostShare .formActions .selectFestival {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.PostShare .formActions .selectFestival select {
+  background: transparent;
+  color: var(--color-primary);
+}
+@media (max-width: 768px) {
+  .PostShare .formActions .selectFestival {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 1168px) {
+  .PostShare .formActions button {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
 }
 .PostShare .postOptions {
   display: flex;
@@ -54,6 +98,13 @@
 .PostShare .postOptions .option i {
   color: var(--color-primary);
   margin-right: 2px;
+}
+@media (max-width: 1168px) {
+  .PostShare .postOptions {
+    flex-wrap: wrap;
+    font-size: 10px;
+    gap: 0;
+  }
 }
 .PostShare .previewImage {
   position: relative;

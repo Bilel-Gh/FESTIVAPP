@@ -11,10 +11,27 @@ nav .container {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 768px) {
+  nav .container {
+    width: 90%;
+    gap: 8px;
+  }
+}
+@media (max-width: 650px) {
+  nav .container .logo {
+    font-size: 1rem;
+  }
+}
 nav .search-bar {
   background: var(--color-light);
   border-radius: var(--border-radius);
   padding: var(--search-padding);
+  display: flex;
+}
+@media (max-width: 768px) {
+  nav .search-bar {
+    display: none;
+  }
 }
 nav .search-bar input[type=search] {
   background: transparent;
@@ -32,8 +49,24 @@ nav .search-bar input[type=search]:-ms-input-placeholder {
 nav .search-bar input[type=search]::placeholder {
   color: var(--color-gray);
 }
-nav .create {
+nav img {
+  width: 100%;
+  height: 100%;
+}
+nav .logout {
   display: flex;
   align-items: center;
   gap: 2rem;
+}
+@media (max-width: 768px) {
+  nav .logout {
+    gap: 1rem;
+  }
+  nav .logout button {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+  nav .logout .profile-picture {
+    display: none;
+  }
 }/*# sourceMappingURL=NavBar.css.map */

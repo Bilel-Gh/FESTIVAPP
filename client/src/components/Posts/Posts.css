@@ -4,7 +4,33 @@
   gap: 1rem;
   overflow: auto;
   border-radius: 1rem;
+  padding-bottom: 9rem;
 }
 .Posts::-webkit-scrollbar {
   display: none;
+}
+@media (max-width: 1000px) {
+  .Posts {
+    padding-bottom: 5rem;
+  }
+}
+.Posts .Posts__filter {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+.Posts .Posts__filter > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid var(--color-dark) 1px;
+  border-radius: 5rem;
+  padding: 0.2rem 1rem;
+  cursor: pointer;
+}
+.Posts .Posts__filter > div select {
+  cursor: pointer;
+  background: transparent;
+  color: var(--color-primary);
 }/*# sourceMappingURL=Posts.css.map */
