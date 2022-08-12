@@ -7,8 +7,19 @@
     position: relative;
     //responsive mobile
     @media (max-width: 750px) {
+        height: auto;
         flex-direction: column;
-          padding: 5rem 0 17rem 0 !important;
+        padding: 7rem 0 20rem 0 !important;
+        .a-right {
+            width: 85%;
+            padding: 2rem;
+            .infoForm {
+                div {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+            }
+        }
     }
     .a-left {
         text-align: center;
@@ -45,6 +56,7 @@
                     flex-direction: column;
                 }
             }
+
             .infoInput {
                 background: var(--color-light);
                 padding: 1rem;

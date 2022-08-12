@@ -12,7 +12,10 @@ function App() {
   const user = useSelector((state)=>state.authReducer.authData);
   return (
     <div className="App">
-      <Toaster/>
+      <Toaster
+        position="top-right"
+        reverseOrder={true}
+      />
       {/* <div> */}
         {/* <NavBar/>
         <Home/> */}
