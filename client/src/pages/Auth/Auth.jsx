@@ -8,6 +8,7 @@ const Auth = () => {
     const dispatch = useDispatch()
     const loading = useSelector(state => state.authReducer.loading)
     const [isSignUp, setIsSignUp] = React.useState(false)
+    const [loading, setLoading] = React.useState(false)
     const [data, setData] = useState({
         firstname: "",
         lastname: "",
@@ -28,10 +29,11 @@ const Auth = () => {
 
     const handleSubmit = (e) => {
      e.preventDefault();
-
+     setLoading(true);
      if(isSignUp){
        if(data.password !== data.confirmpass){
          setConfirmPass(false)
+         setLoading(false);
          toast.error("La confirmation de mot de passe ne correspond pas")
         } else{
           dispatch(signUp(data))
@@ -155,7 +157,7 @@ const Auth = () => {
             )}
           </div>
           <button type="submit" className="btn btn-primary">
-            {isSignUp ? "Inscription" : "Connexion"}
+            {loading ? "Connexion en cours" : isSignUp ? "Inscription" : "Connexion"}
           </button>
           <div className='redirection'>
             <span >
