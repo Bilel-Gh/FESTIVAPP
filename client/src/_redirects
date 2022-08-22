@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/auth"
+  to = "/#/auth"
+  status = 200
